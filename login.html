@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DSA Fusion Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      /* Body Styling */
+      body {
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to right, #ffffff, #e6e6e6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+      }
+    </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>DSA Fusion Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="question_bank.html">Question Bank</a></li>
+            <li><a href="custom_sheets.html">Custom Sheets</a></li>
+            <li><a href="login.html" class="active">Login / Signup</a></li>
+        </ul>
+    </nav>
+  </header>
+    <div class="login-container">
+        <!-- Login Form -->
+        <div class="login-box">
+            <h2>Login to Your Account</h2>
+            <form>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p class="register-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="login-image">
+            <img src="assets/login-image.png" alt="Login Illustration">
+        </div>
+    </div>
+</body>
+</html>
+

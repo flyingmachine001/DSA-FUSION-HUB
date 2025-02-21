@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank - DSA Fusion Hub</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>DSA Fusion Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="question_bank.html">Question Bank</a></li>
+                <li><a href="custom_sheets.html">Custom Sheets</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Question Bank Section -->
+    <section class="card">
+        <h2>Question Bank</h2>
+        <p>Search for DSA questions by topic and difficulty.</p>
+
+        <!-- Filters -->
+        <div class="filters">
+            <select id="topicFilter">
+                <option value="all">All Topics</option>
+                <option value="arrays">Arrays</option>
+                <option value="strings">Strings</option>
+                <option value="stacks">Stacks</option>
+            </select>
+
+            <select id="difficultyFilter">
+                <option value="all">All Difficulties</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Questions List -->
+        <div class="questions" id="questionsList">
+            <!-- Questions will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DSA Fusion Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script src="question.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sheets | DSA Fusion Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DSA Fusion Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="question_bank.html">Question Bank</a></li>
+                <li><a href="custom_sheets.html" class="active">Custom Sheets</a></li>
+                <li><a href="login.html">Login / Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Create Your Custom DSA Sheet</h2>
+        <p>Build personalized question sheets by selecting problems from various sources.</p>
+        <a href="#create-sheet" class="btn">Get Started</a>
+    </section>
+
+    <!-- Custom Sheets Section -->
+    <section id="create-sheet" class="card">
+        <h2>Build Your Custom Sheet</h2>
+        <form id="customSheetForm">
+            <label for="sheet-name">Sheet Name:</label>
+            <input type="text" id="sheet-name" placeholder="Enter sheet name" required>
+
+            <label for="topic-select">Select Topics:</label>
+            <select id="topic-select" multiple>
+                <option value="arrays">Arrays</option>
+                <option value="linked-lists">Linked Lists</option>
+                <option value="trees">Trees</option>
+                <option value="graphs">Graphs</option>
+                <option value="dp">Dynamic Programming</option>
+            </select>
+
+            <button type="submit" class="btn">Create Sheet</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DSA Fusion Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('customSheetForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your custom sheet has been created successfully!');
+        });
+    </script>
+</body>
+</html>
